@@ -1,18 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Todolist</title>
     <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
     <div id="container">
-      <input type="text" id="todo-input" placeholder="Add new task...">
-      <button id="add-btn">Add todo</button>
-      <button id="clear-btn">Clear list</button>
+      <h1>Todo list✅</h1>
+
+      <!-- Login -->
+      <div id="login-container">
+        <form id="login-form">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password..."
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+        <p id="login-message"></p>
+      </div>
+
+      <div id="todo-container" style="display: none;">
+        <div class="input-field">
+          <input type="text" id="todo-input" placeholder="Add new task..." />
+          <button id="add-btn">Add todo</button>
+          <button id="clear-btn">Clear list</button>
+        </div>
+        <ul id="todo-list"></ul>
+        <button id="logout-btn">Logout</button>
+      </div>
     </div>
-    <ul id="todo-list"></ul>
   </body>
 </html>
