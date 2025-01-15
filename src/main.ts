@@ -25,7 +25,7 @@ const auth = getAuth(app)
 const db = getDatabase(app)
 
 let todos: Todo[] = []
-
+// Fix these 
 const loginContainer = document.getElementById("login-container")!
 const todoContainer = document.getElementById("todo-container")!
 const todoListElement = document.getElementById("todo-list")!
