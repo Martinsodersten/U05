@@ -4,3 +4,4 @@
 2. Svara på Readme frågorna
 3. Ladda upp på netlify
 4. Testa npx tsc tillsammans med npm run dev
+5. Gör en separat variant med supaBase
